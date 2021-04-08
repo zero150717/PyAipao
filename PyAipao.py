@@ -70,7 +70,7 @@ class Aipaoer(object):
     def get_runId(self):
         token = self.token
         distance = self.distance
-        url = "http://client3.aipao.me/api/{token}/QM_Runs/SRS?S1=32.35011&S2=119.40146&S3={distance}" \
+        url = "http://client3.aipao.me/api/{token}/QM_Runs/SRS?S1=106.140715&S2=38.509398&S3={distance}" \
             .format(token=token, distance=distance)
         headers = {'version': '2.40'}
         rsp = requests.get(url, headers=headers)
